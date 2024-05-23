@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+// import About from "./component/About";
+import Navbar from "./component/Navbar";
+import Text from "./component/Text";
+import React from "react";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { Route } from "react-router-dom/cjs/react-router-dom.min";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Router> */}
+      <Navbar title="ReactMagic" />
+      <div className="container" my-3="true">
+        {/* <Switch>
+            <Route path="/about">
+              <About />
+            </Route> */}
+        {/* <Route path="/"> */}
+        <Text heading="Enter your text below" />
+        {/* </Route> */}
+        {/* </Switch> */}
+      </div>
+      {/* </Router> */}
+    </>
   );
 }
 
